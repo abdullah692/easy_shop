@@ -1,12 +1,14 @@
 import React, {useEffect} from 'react';
 import {View, Image, StyleSheet} from 'react-native';
 import Login from './Login';
+
+
 function SplashScreen() {
   useEffect(() => {
     setTimeout(() => {
-      <Login />;
+      <Text>Hello there</Text>
     }, 3000);
-  }, []);
+  },[]);
 
   return (
     <View style={styles.container}>
