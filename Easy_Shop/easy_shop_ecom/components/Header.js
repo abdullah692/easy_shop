@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet,Image} from 'react-native';
+import {View, StyleSheet, Image} from 'react-native';
 
 function Header() {
   return (
@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
   header: {
     height: 80,
     paddingTop: 10,
+    width: '100%',
   },
   img: {
     alignItems: 'center',

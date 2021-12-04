@@ -4,9 +4,10 @@ import Login from './Login';
 
 
 function SplashScreen() {
+  
   useEffect(() => {
     setTimeout(() => {
-      <Text>Hello there</Text>
+      <Text>Hello</Text>
     }, 3000);
   },[]);
 
