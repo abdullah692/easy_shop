@@ -2,7 +2,7 @@
   "_id": {
     "$oid": "5f15d8852a025143f9593a7c"
   },
-  "image": "https://lh3.googleusercontent.com/proxy/PHMeEUxncFvxo71Hbw80j6G8IEv8CHaKUPMbfIAU_XfRTkc-S72ohLqMtiU0Ch-yZG9flgxaK1VXh0W4aIzZawc1Z2Yi",
+  "image": "https://media.gettyimages.com/photos/general-view-of-brazuca-and-the-fifa-world-cup-trophy-at-the-maracana-picture-id453347919?s=2048x2048",
   "brand": "PS3",
   "price": 250,
   "rating": 1,
@@ -19,7 +19,7 @@
   "_id": {
     "$oid": "5f15d92ee520d44421ed8e9b"
   },
-  "image": "",
+  "image": "https://media.gettyimages.com/photos/rustic-chairs-in-garden-picture-id1134357865?s=2048x2048",
   "brand": "IKEA",
   "price": 350.9,
   "rating": 5,
@@ -36,7 +36,7 @@
   "_id": {
     "$oid": "5f15d964e520d44421ed8e9c"
   },
-  "image": "",
+  "image": "https://media.gettyimages.com/photos/empty-swimming-pool-with-lounge-chairs-picture-id1082344242?s=2048x2048",
   "brand": "OBI",
   "price": 1350.9,
   "rating": 5,
@@ -70,7 +70,7 @@
   "_id": {
     "$oid": "5f15da13e520d44421ed8e9e"
   },
-  "image": "https://lh3.googleusercontent.com/proxy/ZqRo12bOfeU7xg7mTMfgENdMop_Zl9srLYDKeFilLCZkych8UO4ldDlRzT-8q5scq35krZsqxprZA85RdGLEVvejnPY4RRfNZ1eXDUJRoqHHRWBB5iMCx7UxT4l6iA",
+  "image": "https://media.gettyimages.com/photos/empty-sofa-against-white-background-picture-id1190374388?s=2048x2048",
   "brand": "Mobilix",
   "price": 1000,
   "rating": 5,

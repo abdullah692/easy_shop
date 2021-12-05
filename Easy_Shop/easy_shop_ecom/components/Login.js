@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {View, StyleSheet, Text, TextInput, Button} from 'react-native';
-import Header from './Header';
+
 import Error from './Error';
 import Register from './Register';
 
@@ -22,7 +22,7 @@ function Login() {
   };
   return (
     <View style={styles.container}>
-      <Header />
+      
       <View>
       <Text style={styles.register}>User Login</Text>
         {/* <FormContainer title={Login}> */}
