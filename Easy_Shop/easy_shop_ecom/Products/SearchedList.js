@@ -1,14 +1,14 @@
-import { View, StyleSheet, Text } from 'react-native'
+import { View, StyleSheet, Text, Dimensions } from 'react-native'
 import React from 'react'
-import { Left, Container, Body, ListItem, Thumbnail, Text } from 'native-base'
+import { Left, Container, Body, ListItem, Thumbnail, } from 'native-base'
 
-var { width } = Dimension.get('window');
+var { width } = Dimensions.get('window');
 
 function SearchedList(props) {
     const { productFiltered } = props;
     return (
         <Content style={{ width: width }}>
-            {productFiltered.length > 0 ? (
+            {productFiltered.length > 0 ? ( 
                 productFiltered.map((item) => {
                     <ListItem key={item._id} avatar>
                         <Left>
@@ -23,7 +23,8 @@ function SearchedList(props) {
                 })
             ) :
                 (
-                    <View style={ }>
+                    <View style={styles.center
+                     }>
                         <Text style={{ alignSelf: 'center' }}>
                             No product match the selected criteria
                         </Text>
