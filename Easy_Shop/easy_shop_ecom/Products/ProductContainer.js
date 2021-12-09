@@ -4,24 +4,39 @@ import ProductList from './ProductList';
 import { Icon, Container, Item, Input, Header } from 'native-base'
 import SearchedList from './SearchedList';
 import Banner from '../Shared/Banner';
+import CategoryFilter from './CategoryFilter';
 
 
 const data = require("../assets/084 products.json");
+const productCat = require("../assets/094 categories.json");
 console.log(data);
+console.log(productCat);
 
 function ProductContainer() {
     const [product, setProduct] = useState([]);
     const [productFiltered, setProductFiltered] = useState([]);
     const [focus, setFocus] = useState();
+    const [categories, setCategories] = useState([]);
+    const [Productctg, setProductctg] = useState([]); 
+    const [active, setActive] = useState();
+    const [initialstate, setInitialState] = useState([]);
+    
 
     useEffect(() => {
         setProduct(data)
         setProductFiltered(data)
         setFocus(false);
+        setCategories(productCat)
+        setActive(-1)
+        setInitialState(data)
         return () => {
             setProduct([])
             setProductFiltered([])
             setFocus([])
+            setCategories([])
+            setActive()
+            setInitialState()
+
         }
     }, [])
 
@@ -37,6 +52,20 @@ function ProductContainer() {
     const onBlur = () => {
         setFocus(false)
     }
+
+    //Categories
+
+    const changeCtg = (ctg) => {
+        ctg === "all"
+            ? [setProductctg(initialstate), setActive(true)]
+            : [
+                setProductctg(
+                    product.filter((i) => i.category._id == ctg),
+                    setActive(true)
+                )
+            ]
+    }
+
 
 
     return (
@@ -59,13 +88,25 @@ function ProductContainer() {
                     productFiltered={productFiltered} />
             ) : (
                 <View style={styles.container}>
-                    <View><Banner /></View>
+                    <View>
+                        <Banner />
+                    </View>
+                    <View>  
+                     <CategoryFilter
+                        categories={productCat}
+                        CategoryFilter={changeCtg}
+                        productCtg={Productctg}
+                        setActive={setActive}
+                        active={active}
+                    />
+                    </View>
                     <FlatList
                         data={product}
+                        numColumns={2}
                         renderItem={({ item }) => <ProductList
                             key={item.id}
                             item={item} />}
-                        keyExtractor={item => item.name}
+                        keyExtractor={item => item.brand }
                     />
                 </View>
 
